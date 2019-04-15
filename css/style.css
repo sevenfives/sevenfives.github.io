@@ -1,0 +1,182 @@
+/* colours */
+/* fonts */
+@font-face {
+  font-family: "Cinzel_Black";
+  src: url("../fonts/cinzeldecorative-black-webfont.woff2") format("woff2"), url("../fonts/cinzeldecorative-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cinzel_Regular";
+  src: url("../fonts/cinzeldecorative-regular-webfont.woff2") format("woff2"), url("../fonts/cinzeldecorative-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+h1, .hero, h2, .slogan {
+  font-family: Cinzel_Regular, serif;
+}
+
+.hero {
+  display: block;
+  font-family: Cinzel_Black, serif;
+  color: #fff;
+  font-size: 60px;
+  position: relative;
+}
+
+.slogan {
+  display: block;
+  font-family: Cinzel_Regular, serif;
+  color: #fff;
+  font-size: 36px;
+}
+
+.name {
+  display: block;
+  padding: 8px 0;
+  color: #cdb378;
+  font-style: italic;
+  font-size: 24px;
+}
+
+h2 {
+  color: #fff;
+  font-size: 72px;
+  padding: 0 0 30px 0;
+}
+
+section p {
+  color: #cdb378;
+  line-height: 40px;
+}
+
+.green {
+  color: #b4ba98;
+  padding-bottom: 30px;
+}
+
+.hero::before {
+  content: "";
+  width: 250px;
+  height: 3px;
+  background-color: #cdb378;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.hero::after {
+  content: "";
+  width: 250px;
+  height: 3px;
+  background-color: #cdb378;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+button {
+  margin: 20px 0;
+  padding: 20px 60px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid #404429;
+  color: #fff;
+  font-family: serif;
+  font-size: 16px;
+  transition: background-color 0.3s ease-out 0s;
+}
+button:hover {
+  background-color: #cdb378;
+  cursor: pointer;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 24px;
+  font-family: serif;
+}
+
+.wrapper_full_width {
+  background: #1a1c0f url("../img/bg.png") no-repeat;
+  background-size: cover;
+  height: 1060px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  padding: 120px;
+}
+
+header {
+  width: 720px;
+  margin: 0 auto;
+  padding: 30px 0;
+  text-align: center;
+  outline: 0px solid yellow;
+}
+
+.bottom_anchor {
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 90%;
+  width: 130px;
+  outline: 0px solid yellow;
+  font-size: 16px;
+  color: #cdb378;
+  font-style: italic;
+  text-align: center;
+}
+
+main {
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: 400px;
+  background-color: #1a1c0f;
+}
+
+section {
+  box-sizing: border-box;
+  padding: 108px 215px;
+  width: 100%;
+  height: 493px;
+}
+section p {
+  max-width: 890px;
+}
+
+.cut {
+  width: 90%;
+  background: #232615 url("../img/logo_big.png") no-repeat right center;
+  -webkit-box-shadow: 0px -37px 52px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -37px 52px -16px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -37px 52px -16px rgba(0, 0, 0, 0.75);
+}
+
+.section_image, #image_2, #image_1 {
+  display: block;
+  position: relative;
+}
+
+#image_1 {
+  top: -360px;
+  right: -80%;
+}
+
+#image_2 {
+  top: -700px;
+  right: -80%;
+}
+
+#gradient {
+  background-color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

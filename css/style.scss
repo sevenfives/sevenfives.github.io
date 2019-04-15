@@ -1,0 +1,133 @@
+
+
+/* colours */
+
+$sand: #cdb378;
+$dark_brown: #1a1c0f;
+$olive: #232615;
+$light_green: #b4ba98;
+
+
+/* fonts */
+
+
+@font-face {
+    font-family: 'Cinzel_Black';
+    src: url('../fonts/cinzeldecorative-black-webfont.woff2') format('woff2'),
+         url('../fonts/cinzeldecorative-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'Cinzel_Regular';
+    src: url('../fonts/cinzeldecorative-regular-webfont.woff2') format('woff2'),
+         url('../fonts/cinzeldecorative-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$heading: Cinzel_Regular, serif;
+$bold_heading: Cinzel_Black, serif;
+
+
+@import 'mixins';
+@import 'text';
+
+
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-size: 24px;
+	font-family: serif;
+}
+
+.wrapper_full_width {
+	background: $dark_brown url('../img/bg.png') no-repeat;
+	background-size: cover;
+	height: 1060px;
+}
+
+.logo {
+	display: block;
+	margin: 0 auto;
+	padding: 120px;
+}
+
+header {
+	width: 720px;
+	margin: 0 auto;
+	padding: 30px 0;
+	text-align: center;
+	@include outline(yellow);
+}
+
+.bottom_anchor {
+	display: block;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 90%;
+	width: 130px;
+	@include outline(yellow);
+	font-size: 16px;
+	color: $sand;
+	font-style: italic;
+	text-align: center;
+}
+
+
+main {
+	box-sizing: border-box;
+	width: 100%;
+	padding-bottom: 400px;
+	background-color: $dark_brown;
+}
+
+section {
+	box-sizing: border-box;
+	padding: 108px 215px; 
+	width: 100%;
+	height: 493px;
+
+		p {
+			max-width: 890px;
+		}
+}
+
+
+.cut {
+	width: 90%;
+	background: $olive url('../img/logo_big.png') no-repeat right center;
+-webkit-box-shadow: 0px -37px 52px -16px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px -37px 52px -16px rgba(0,0,0,0.75);
+box-shadow: 0px -37px 52px -16px rgba(0,0,0,0.75);
+}
+
+.section_image {
+		display: block;
+		position: relative;
+	}
+
+#image_1 {
+		@extend .section_image;
+		top: -360px;
+		right: -80%;
+	}
+
+#image_2 {
+		@extend .section_image;
+		top: -700px;
+		right: -80%;
+}
+
+#gradient {
+	background-color: black;
+}
